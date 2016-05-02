@@ -50,16 +50,17 @@ var clickHandler = function(e){
     if(feature.properties.cuisine){
       info +='<p>' + feature.properties.cuisine '</p>'}
     if(feature.properties.website){
-      info +='<p><a href="' + feature.properties.website +'">'+ feature.properties.website '</a></p>'}
-		info += "</div>';
-        $('#info').append(info);
-      {)
-    {
-      featureLayer.on('ready',function(){
-        this.eachLayer(function(layer){
-          layer.on('click'. clickHandler);
-          {)
-     {)
-map.on('c;ick", function(){
-       $('#sidebar).fdeOut(200);
-       {)
+      info +='<p><a href="' + feature.properties.website +'">'+ feature.properties.website '</a></p>'
+    }
+	info += '</div>';
+    $('#info').append(info);
+  }
+ 
+featureLayer.on('ready',function(){
+   this.eachLayer(function(layer){
+    layer.on('click'. clickHandler);
+   })
+  })
+map.on('click', function(){
+       $('#sidebar').fadeOut(200);
+  })
