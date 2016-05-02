@@ -103,7 +103,7 @@ var myLocation = L.mapbox.featureLayer().addTo(map);
       }
     }).done(function(data){
       var routeShape = polyline.decode(data.trip.legs[0].shape);
-      routLine.setGeoJSON({
+      routeLine.setGeoJSON({
         type: 'Feature',
         geometry: 'Linestring',
         coordinates: routeShape
