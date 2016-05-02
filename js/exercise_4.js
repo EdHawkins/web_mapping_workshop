@@ -27,10 +27,9 @@ featureLayer.on('ready', function(){
 	this.eachLayer(function(layer){
         layer.setIcon(L.mapbox.marker.icon({
              "marker-color": "#8834bb",
-             "marker-size": "Large",
+             "marker-size": "large",
              "marker-sysmbol": "restaurant"
         }))
-    
     })
-		map.fitBounds(featureLayer.getBounds());
+	map.fitBounds(featureLayer.getBounds());
  })
