@@ -113,6 +113,7 @@ var myLocation = L.mapbox.featureLayer().addTo(map);
             "stroke-opacity": 0.8,
             "stroke-width": 8
       }
+      })
     })
   }
 
