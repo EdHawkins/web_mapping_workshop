@@ -105,8 +105,9 @@ var myLocation = L.mapbox.featureLayer().addTo(map);
       var routeShape = polyline.decode(data.trip.legs[0].shape);
       routeLine.setGeoJSON({
         type: 'Feature',
-        geometry: 'Linestring',
-        coordinates: routeShape
+        geometry: {
+          'LineString',
+          coordinates: routeShape
       },
         properties: {
             "stroke": "#ed23f1",
