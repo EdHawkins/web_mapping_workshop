@@ -89,7 +89,7 @@ var myLocation = L.mapbox.featureLayer().addTo(map);
   function getDirections(frm, to){
  	var jsonPayload = JSON.stringify({
       locations: [
-        {lat: frm[1], lon: frm[0]}
+        {lat: frm[1], lon: frm[0]},
         {lat: to[1], lon: to[0]}
         ],
       	costing: 'pedestrian',
