@@ -58,7 +58,8 @@ var clickHandler = function(e){
   
   var myGeoJSON = myLocation.getGeoJSON();
   getDirections(myGeoJSON.geometry.coordinates, feature.geometry.coordinates);
-} 
+} costing
+
 featureLayer.on('ready', function(){
    this.eachLayer(function(layer){
     layer.on('click', clickHandler);
@@ -93,7 +94,8 @@ var myLocation = L.mapbox.featureLayer().addTo(map);
         {lat: to[1], lon: to[0]}
         ],
       	costing: 'pedestrian',
-      	units: 'miles'
+        directions_options:{
+      	units: 'miles'}
     })
     $.ajax({
     	url:  'https://valhalla.mapzen.com/route',
@@ -118,8 +120,8 @@ var myLocation = L.mapbox.featureLayer().addTo(map);
     $('directions').fadeIn(400, function(){
       var summary = data.trip.summary
       $('#summary').empty();
-      $('#distance').text((Math.round(summary.length*100)/100) +data.trip.units);
-      $('#time').text((Math.round(summary.time / 60*100) / 100) + 'min');
+      $('#distance').text((Math.round(summary.length*100)/100)+' ' + data.trip.units);
+      $('#time').text((Math.round(summary.time / 60*100) / 100) + ' min');
       
     
     
