@@ -102,7 +102,7 @@ var myLocation = L.mapbox.featureLayer().addTo(map);
         api_key: 'valhalla-gwtf3x2'
       }
     }).done(function(data){
-      var routeShape = polyline.decode(data.trip.legs)[0].shape);
+      var routeShape = polyline.decode(data.trip.legs[0].shape);
       routLine.setGeoJSON({
         type: 'Feature',
         geometry: 'Linestring',
