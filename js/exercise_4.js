@@ -48,7 +48,7 @@ var clickHandler = function(e){
     info += '<div>';
     info += '<h2>' = feature.properties.name + '</h2>'
     if(feature.properties.cuisine){
-      info += '<p>' + feature.properties.cuisine '</p>'
+      info += '<p>' + feature.properties.cuisine + '</p>'
     }
     if(feature.properties.website){
       info += '<p><a href="' + feature.properties.website +'">'+ feature.properties.website '</a></p>'
