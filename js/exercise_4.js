@@ -30,6 +30,7 @@ featureLayer.on('ready', function(){
              "marker-size": "Large",
              "marker-sysmbol": "restaurant"
         }))
-    {)
+    
+    })
 		map.fitBounds(featureLayer.getBounds());
  })
