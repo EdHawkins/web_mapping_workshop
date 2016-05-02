@@ -94,8 +94,7 @@ var myLocation = L.mapbox.featureLayer().addTo(map);
         {lat: to[1], lon: to[0]}
         ],
       	costing: 'pedestrian',
-        directions_options:
-      	units: 'miles'}
+        units: 'miles'
     })
     $.ajax({
     	url:  'https://valhalla.mapzen.com/route',
