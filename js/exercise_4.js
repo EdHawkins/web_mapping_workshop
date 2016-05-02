@@ -74,9 +74,10 @@ var myLocation = L.mapbox.featureLayer().addTo(map);
       },
       properties: {
         "title": "Here I am!",
-        "marker-color": "ff8888",
+        "marker-color": "#ff8888",
         "marker-symbol": "star"
       }
     })
   })
+  map.locate({setView: true})
   
