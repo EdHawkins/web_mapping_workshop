@@ -106,7 +106,7 @@ var myLocation = L.mapbox.featureLayer().addTo(map);
       routeLine.setGeoJSON({
         type: 'Feature',
         geometry: {
-          'LineString',
+          type: 'LineString',
           coordinates: routeShape
       },
         properties: {
