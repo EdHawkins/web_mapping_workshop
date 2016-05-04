@@ -124,7 +124,7 @@ var myLocation = L.mapbox.featureLayer().addTo(map);
       
     
     
-   //    })
+       })
     })
   }
 
